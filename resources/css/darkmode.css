@@ -1,0 +1,46 @@
+/* Dark mode styles */
+body.dark-mode, .dark-mode {
+    background-color: #181a1b !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode .bg-teal-500, .dark-mode .bg-green-200, .dark-mode .bg-light {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+}
+.dark-mode .border-teal-500, .dark-mode .border-secondary {
+    border-color: #3bc9db !important;
+}
+.dark-mode .btn-outline-success {
+    color: #3bc9db;
+    border-color: #3bc9db;
+}
+.dark-mode .btn-outline-success:hover {
+    background-color: #3bc9db;
+    color: #181a1b;
+}
+.dark-mode .modal-content {
+    background-color: #23272b;
+    color: #e0e0e0;
+}
+.dark-mode select, .dark-mode textarea, .dark-mode input {
+    background-color: #23272b;
+    color: #e0e0e0;
+    border-color: #3bc9db;
+}
+body.dark-mode .dark-table,
+body.dark-mode .dark-table thead,
+body.dark-mode .dark-table tbody,
+body.dark-mode .dark-table tr,
+body.dark-mode .dark-table th,
+body.dark-mode .dark-table td {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #3bc9db !important;
+}
+body.dark-mode .dark-table.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #202225 !important;
+}
+body.dark-mode .dark-table.table-hover > tbody > tr:hover {
+    background-color: #2a2d31 !important;
+    color: #fff !important;
+}

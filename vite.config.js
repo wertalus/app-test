@@ -11,4 +11,21 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    resolve:{
+        alias:{
+            '$':'jQuery'
+        },
+    },
+    build: {
+        // The outDir should be set to your public directory
+        outDir: 'public_html/build',
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+        },
+      }
+    },
+
 });

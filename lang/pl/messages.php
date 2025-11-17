@@ -9,8 +9,9 @@ return [
     'Confirm Password' => 'Potwierdź Hasło',
     'Register' => 'Rejestracja',
     'Login' => 'Zaloguj',
-    'login' => 'Zaloguj',
-
+    'Logout' => 'Wyloguj',
+    'Dashboard' => 'Pulpit',
+    
     'failed' => 'Podane dane są niepoprawne.',
     'password' => 'Hasło jest niepoprawne.',
     'throttle' => 'Zbyt wiele prób logowania. Spróbuj ponownie za :seconds seconds.',
@@ -30,6 +31,7 @@ return [
     'Please confirm your password before continuing.' => 'Proszę potwierdź hasło przed kontynuacją',
     'Reset Password' => 'Zresetuj Hasło',
     'Send Password Reset Link' => 'Wyślij link do zresetowania hasła',
-    ''
+    'wagon info' => 'Kliknij po więcej informacji',
+    'work center empty' => 'Stanowisko wolne',
 
 ];

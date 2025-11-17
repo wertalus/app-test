@@ -5,4 +5,116 @@
 @import 'variables';
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+//@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/bootstrap";
+
+
+
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+@each $color, $value in $all-colors {
+    .bg-#{$color}{
+        background-color: $value !important;
+    }
+}
+
+@each $color, $value in $all-colors {
+    .border-#{$color}{
+        border-color: $value !important;
+    }
+}
+
+.prod-list.dragging
+{
+    opacity: .5;
+}
+
+.park-track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+    min-height: 60px;
+    background: #e0e0e0;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    padding: 8px;
+    overflow-x: auto;
+}
+.park-track-label {
+    min-width: 80px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+.park-wagon {
+    display: inline-block;
+    min-width: 40px;
+    min-height: 32px;
+    background: #3bc9db;
+    color: #181a1b;
+    border: 2px solid #23272b;
+    border-radius: 8px;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: grab;
+    transition: box-shadow 0.2s;
+}
+.park-wagon.dragging {
+    opacity: 0.5;
+    box-shadow: 0 0 10px #23272b;
+}
+
+.park-wagon.wagon-denied {
+    position: relative;
+    cursor: not-allowed !important;
+    opacity: 0.7;
+}
+.park-wagon.wagon-denied:after {
+    content: '\26D4'; /* ikona zakazu */
+    color: #dc3545;
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.park-track.drag-over {
+    background: #ffe066 !important;
+    border-color: #fab005 !important;
+    box-shadow: 0 0 10px #fab005;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.drop-slot {
+    height: 48px;
+    min-width: 200px;
+    margin: 2px 0;
+    background: transparent;
+    border: 2px dashed #888;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s;
+    box-sizing: border-box;
+}
+.drop-slot.slot-over {
+    background: var(--bs-primary-bg-subtle, #e0e7ff);
+    border-color: var(--bs-primary, #0d6efd);
+}

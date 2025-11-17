@@ -16,6 +16,13 @@
 
                     {{ __('messages.You are logged in!') }}
                 </div>
+                <div class="card-footer d-flex justify-content-center">
+                    <a href="/welcome-page" type="button" class="btn btn-success"> 
+
+                        Zaczynamy
+
+                    </a>
+                </div>
             </div>
         </div>
     </div>
