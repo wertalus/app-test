@@ -7,10 +7,27 @@
     "file": "assets/bootstrap-icons-mSm7cUeB.woff2",
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
+  "resources/css/darkmode.css": {
+    "file": "assets/darkmode-Bxu4PEjl.css",
+    "src": "resources/css/darkmode.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
     "file": "assets/app-Drog7MG8.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/canvas.js": {
+    "file": "assets/canvas-l0sNRNKZ.js",
+    "name": "canvas",
+    "src": "resources/js/canvas.js",
+    "isEntry": true
+  },
+  "resources/js/draggable.js": {
+    "file": "assets/draggable-BDNi-9Lo.js",
+    "name": "draggable",
+    "src": "resources/js/draggable.js",
     "isEntry": true
   },
   "resources/sass/app.scss": {
